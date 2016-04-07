@@ -1,7 +1,7 @@
 library("ggplot2")
 library(evd)
 
-data <- read.csv(paste0("/Users/mariosky/evoDrawing/data/data",1,".csv"))
+data <- read.csv("data1.csv")
 fw <- fitdistr(data$participation, "weibull")
 
 
