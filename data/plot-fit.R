@@ -5,7 +5,7 @@ library(fitdistrplus)
 
 suffix <- c("1")
 for ( i in suffix ) {
-    data <- read.csv(paste0("/Users/mariosky/evoDrawing/data/data",i,".csv"))
+    data <- read.csv(paste0("data",i,".csv"))
   # ggplot(data,aes(x=as.numeric(row.names(data)),y=participation)) +geom_point()+scale_y_log10()
     
     this.fit <- fgev(data$participation)
